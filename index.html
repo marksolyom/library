@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="book-form-section">
+        <div class="logo"><img src="img/book.png" alt="image of books">
+            <h1>Library</h1>
+            <button type="button" id="adderButton">Add</button>
+        </div>
+
+        <form id="adderForm" name="book-form" action="">
+            <label for="book-title">
+                What is the book's title?
+                <input type="text" name="book-title" id="book-title">
+            </label>
+            <label for="book-author">
+                Who is the book's author?
+                <input type="text" name="book-author" id="book-author">
+            </label>
+            <label for="book-pages">
+                How many pages are there?
+                <input type="number" name="book-pages" id="book-pages">
+            </label>
+            <label for="book-read">
+                Have you read it already?
+                <select name="book-read" id="book-read">
+                    <option value="not yet">not yet</option>
+                    <option value="yes">yes</option>
+                </select>
+            </label>
+            <div class="form-buttons">
+                <button type="button" id="submitBook">
+                    Add New Book
+                </button>
+                <button type="button" id="cancelButton">
+                    Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="book-list-section">
+        <table class="book-list">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Pages</td>
+                    <td>Read</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody id="bookListItems">
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

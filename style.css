@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-image: url('./img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Gentium Book Basic', serif;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    font-size: 1.3rem;
+    gap: 2rem;
+}
+
+h1 {
+    color: white;
+    text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+}
+
+.book-form-section {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+#adderButton {
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    background-color: rgb(255, 194, 80);
+    cursor: pointer;
+}
+
+#adderButton:hover {
+    background-color: beige;
+}
+
+.book-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+#adderForm {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    background-color: rgb(255, 194, 80);
+}
+
+table {
+    background-color: beige;
+    border-spacing: 0;
+}
+
+.book-list-section {
+    display: flex;
+    justify-content: center;
+}
+
+.book-list thead {
+    font-weight: 600;
+    background-color: rgb(255, 194, 80);
+}
+
+.book-list tr {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+}
+
+.book-list td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#bookListItems td {
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(255, 194, 80);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+td button:hover {
+    background-color: #C4DFAA;
+}
+
+button:hover {
+    background-color: beige;
+}
